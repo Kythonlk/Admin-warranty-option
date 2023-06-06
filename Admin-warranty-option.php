@@ -56,7 +56,6 @@ function your_plugin_display_warranty_option() {
 
     // Display the warranty option HTML
     echo '<div class="warranty-option">';
-    echo '<label for="warranty_years">' . __( 'Warranty Years:', 'kyap' ) . '</label>';
-    echo '<input type="number" name="warranty_years" id="warranty_years" min="1" value="' . esc_attr( $warranty_years ) . '" />';
+    echo '<h6>' . __( 'Warranty Years:', 'kyap' ) . ' ' . esc_html( $warranty_years ) . '</h6>';
     echo '</div>';
 }
